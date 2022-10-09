@@ -36,9 +36,13 @@ code .
 
 # install python
 echo "Installing python"
+brew install pyenv
+PYENV_ROOT=$HOME/.pyenv
+pyenv install 2.7.18
+pyenv install 3.10.4
+pyenv global 2.7.18
 
-
-# install nvm
+install nvm
 echo "Installing nvm"
 sh -c "$(curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh)"
 export NVM_DIR=$HOME/.nvm;
