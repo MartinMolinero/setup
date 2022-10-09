@@ -43,7 +43,17 @@ pyenv install 2.7.18
 pyenv install 3.10.4
 pyenv global 2.7.18
 
-install nvm
+
+# install anaconda
+echo "-------------- Installing nvm"
+brew instal anaconda --cask
+conda install -c anaconda pandas
+conda install -c anaconda scikit-learn
+conda install -c conda-forge matplotlib
+conda install -c anaconda numpy
+
+
+# install nvm
 echo "-------------- Installing nvm"
 sh -c "$(curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh)"
 export NVM_DIR=$HOME/.nvm;
